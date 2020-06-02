@@ -22,10 +22,10 @@ steps:
 
 - id: "Rodando migrations"
   name: 'gcr.io/cloud-builders/docker'
-#  args: ['exec','-t','app','php','/var/www/artisan','migrate']
-  args: ['exec','-t','app','cat','.env']
+  args: ['exec','-t','app','php','/var/www/artisan','migrate']
+#  args: ['exec','-t','app','cat','.env']
 
 - id: "Rodando phpunit"
   name: 'gcr.io/cloud-builders/docker'
-#  args: ['exec','-t','app','php','/var/www/vendor/bin/phpunit','-c','/var/www/phpunit.xml']
-  args: ['exec','-t','app','ls','-l','/var/www/.docker/dbdata']
+  args: ['exec','-t','app','php','/var/www/vendor/bin/phpunit','-c','/var/www/phpunit.xml']
+#  args: ['exec','-t','app','ls','-l','/var/www/.docker/dbdata']
