@@ -13,7 +13,7 @@ steps:
   args: ['exec','-t','app','find','/','-name','composer']
   #args: ['exec','-t','app','composer','install']
 
-- id: "Rodando composer"
+- id: "Rodando composer2"
   name: 'gcr.io/cloud-builders/docker'
   args: ['exec','-t','app','ls','-l','/var/www']
 
