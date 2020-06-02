@@ -25,6 +25,6 @@ steps:
   args: ['exec','-t','app','php','/var/www/artisan','migrate']
 #  args: ['exec','-t','app','cat','.env']
 
-- id: "Rodando phpunit"
+- id: "Rodando Phpunit"
   name: 'gcr.io/cloud-builders/docker'
   args: ['exec','-t','app','php','/var/www/vendor/bin/phpunit','-c','/var/www/phpunit.xml']
